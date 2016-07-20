@@ -1,0 +1,7 @@
+html{font-size:12px;}
+body,div,ol,ul,li,a,span,strong,dl,dt,dd,var,em,p,h1,h2,h3,h4,h5,h6,img,input,table,tr,th,td{margin:0;padding:0;}
+a{text-decoration:none;cursor:pointer;font-style:normal;outline:none;}
+em,strong,var,h1,h2,h3,h4,h5,h6 {font-weight:normal;font-style:normal;}
+img{vertical-align:top;border:none;}
+ul,ol{list-style:none;}
+.clear{clear:both;height:0px;overflow:hidden;}

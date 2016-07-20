@@ -1,0 +1,128 @@
+@charset "utf-8";
+body {
+  background: url('../images/material/d3/bg.jpg') 0 0 / cover no-repeat;
+}
+.d3-index, .d3-editPic, .d3-editText {
+  position: relative;
+  width: 23.8222rem;
+  height:100%;
+  margin: 0 auto;
+  overflow: hidden;
+  /*background-color:#987C5A;*/
+}
+.editPanel {
+  width: 100%;
+  height: 8.8889rem;
+  margin: 1.4222rem auto 0;
+  border-radius: 10px;
+  text-align: center;
+}
+.editPanel img {
+  width: 2.9867rem;
+  height: 2.8089rem;
+  margin-top: 1.7778rem;
+}
+.editPanel p {
+  margin-top: 1.6rem;
+  color: #fffbfb;
+  font-size: 1.0667rem;
+}
+.d3-pic-list {
+  width: 100%;
+  margin: 1.4222rem auto 0;
+}
+.d3-pic-list ul li {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 11.3778rem;
+  height: 7.4667rem;
+  margin-bottom: 1.4222rem;
+  background-color:#d8d8d8;
+}
+.d3-pic-list ul li:first-child {
+  background: url('../images/material/d3/addPicBg.png') 50% 50% / 4.48rem 4.48rem no-repeat;
+  background-color:#d8d8d8;
+}
+.d3-pic-list ul li input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.d3-pic-list ul li:nth-child(even) {
+  float: right;
+}
+.d3-pic {
+  width: 100%;
+  height: 100%;
+}
+.d3-err {
+  width: 1.0667rem;
+  height: 1.1022rem;
+  position: absolute;
+  top:0;
+  right:0;
+}
+.d3-btn {
+  width: 23.8222rem;
+  height: 3.2rem;
+  margin: 0 auto;
+  background-color:#00b8ee;
+  color: #fffbfb;
+  font-size: 1.2444rem;
+  line-height: 3.2rem;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+}
+/*.d3-btn input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}*/
+.d3-mask {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.d3-dialog {
+  position: relative;
+  top: 6.2222rem;
+  margin: 0 auto;
+  width: 25.2444rem;
+  height: 13.8667rem;
+  background-color: #0a425b;
+}
+.d3-dialog p {
+  width: 19.0222rem;
+  margin: 0 auto;
+  padding-top: 3.7333rem;
+  color: #dbdcd7;
+  font-size: 1rem;
+}
+.d3-ctrl {
+  width: 23.8222rem;
+  height: 3.2rem;
+  margin: 2.4889rem auto;
+}
+.d3-ctrl span {
+  display: inline-block;
+  width: 11.0222rem;
+  height: 3.2rem;
+  font-size: 1rem;
+  color: #676767;
+  text-align: center;
+  line-height: 3.2rem;
+  vertical-align: middle;
+  background-color: #e2e2e2;
+}
+.d3-ctrl span:nth-child(even) {
+  float: right;
+}
+.d3-ctrl span.cur {
+  color: #fffbfb;
+  background-color: #00b8ee;
+}

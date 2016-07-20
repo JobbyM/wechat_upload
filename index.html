@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <link rel="stylesheet" type="text/css" href="css/global.css"/>      <!--全局-->
+  <!-- <link rel="stylesheet" type="text/css" href="css/1.css"/>  -->
+  <title id="title">图片上传</title>
+</head>
+<body>
+  <div class="camera-area">
+     <form enctype="multipart/form-data" method="post">
+      <input type="file" name="fileToUpload" class="fileToUpload" id="fileToUpload" accept="image/*" capture="camera"/>
+       <div class="upload-progress"><span></span></div>
+      </form>
+     <div class="thumb"></div>
+   </div>
+   <script src="js/upload.js"></script>
+   <script>
+     document.getElementById('fileToUpload').addEventListener('change',function(){
+       var upload = new Upload({
+         'fileToUpload': document.querySelector('.fileToUpload'),
+         'thumb': document.querySelector('.thumb'),
+         'progress': document.querySelector('.upload-progress'),
+         'url': './interface/upload.php'
+       })
+
+       upload.fileSelected();
+     })
+   </script>
+</body>
+</html>
